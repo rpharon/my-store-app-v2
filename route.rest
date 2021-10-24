@@ -1,0 +1,29 @@
+GET http://localhost:3000/api/stores
+
+###
+POST http://localhost:3000/api/stores
+Content-Type: application/json
+
+{
+    "name": "Bo's Coffee v2",
+    "owner": "C3",
+    "address": "Pagadian City",
+    "about": "Coffee shop"
+}
+
+###
+GET http://localhost:3000/api/stores/6174fe622ed9e4d260754575
+
+###
+PUT http://localhost:3000/api/stores/6174fe622ed9e4d260754575
+Content-Type: application/json
+
+{
+    "name": "Bo's Coffee v2",
+    "owner": "C3",
+    "address": "Pagadian City",
+    "about": "Coffee shop"
+}
+
+###
+DELETE http://localhost:3000/api/stores/6175421abc3dcb93ab9659a9
