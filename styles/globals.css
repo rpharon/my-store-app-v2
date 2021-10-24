@@ -11,6 +11,11 @@ a {
   text-decoration: none;
 }
 
+a span{
+  color: #0d6efd;
+  text-decoration: underline;
+}
+
 * {
   box-sizing: border-box;
 }
