@@ -7,6 +7,7 @@ const edit = ({ store }) => {
     const handleSubmit = async (e) => {
         e.preventDefault()
         const name = e.target.name.value
+        const email = e.target.email.value
         const owner = e.target.owner.value
         const address = e.target.address.value
         const about = e.target.about.value
@@ -20,6 +21,7 @@ const edit = ({ store }) => {
                 },
                 body: JSON.stringify({
                     name: name,
+                    email: email,
                     owner: owner,
                     address: address,
                     about: about
@@ -49,6 +51,19 @@ const edit = ({ store }) => {
                             id='name'
                             name='name'
                             defaultValue={store.name}/>
+                    </Col>
+                </Row>
+
+                <Row className='py-2'>
+                    <Col>
+                        <label>Email address</label>
+                    </Col>
+                    <Col>
+                        <input  
+                            type='text'
+                            id='email'
+                            name='email'
+                            defaultValue={store.email}/>
                     </Col>
                 </Row>
 

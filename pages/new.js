@@ -9,6 +9,7 @@ const addnew = () => {
         e.preventDefault()
 
         const name = e.target.name.value
+        const email = e.target.email.value
         const owner = e.target.owner.value
         const address = e.target.address.value
         const about = e.target.about.value
@@ -22,6 +23,7 @@ const addnew = () => {
                 },
                 body: JSON.stringify({
                     name: name,
+                    email: email,
                     owner: owner,
                     address: address,
                     about: about
@@ -47,6 +49,16 @@ const addnew = () => {
                             type='text'
                             id='name'
                             name='name'
+                            required/>
+                    </Col>
+                </Row>
+
+                <Row className='py-2'>
+                    <Col><label>Email address:</label></Col>
+                    <Col><input 
+                            type='text'
+                            id='email'
+                            name='email'
                             required/>
                     </Col>
                 </Row>

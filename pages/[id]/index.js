@@ -26,6 +26,7 @@ const index = ({ store }) => {
     return (
         <>
             <h1>{store.name}</h1>
+            <p>{store.email}</p>
             by
             <h2>{store.owner}</h2>
             <p>Location: {store.address}</p>
